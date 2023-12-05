@@ -1,4 +1,4 @@
-var assert = require('assert');
+var assert = require("assert");
 // ... Ton code ici ...
 var BankCustomer = /** @class */ (function () {
     function BankCustomer(customer, creditCardCode) {
@@ -13,10 +13,9 @@ var BankCustomer = /** @class */ (function () {
     };
     return BankCustomer;
 }());
-;
 // Tests
-var customer = new BankCustomer('John Doe', '3579');
-assert.equal(typeof customer.getName, 'function');
-assert.equal(typeof customer.verifyInput, 'function');
-assert.equal(customer.getName(), 'John Doe');
-assert.ok(customer.verifyInput('3579'));
+var customer = new BankCustomer("John Doe", "3579");
+assert.equal(typeof customer.getName, "function");
+assert.equal(typeof customer.verifyInput, "function");
+assert.equal(customer.getName(), "John Doe");
+assert.ok(customer.verifyInput("3579"));
